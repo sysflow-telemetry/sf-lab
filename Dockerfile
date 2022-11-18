@@ -19,4 +19,10 @@
 
 FROM sysflowtelemetry/sfnb:0.5.1-rc1
 
-COPY --chown=$NB_UID:$NB_UID pynb /home/$NB_USER/work
+ARG NB_UID=1000
+
+ARG NB_GID=100
+
+ARG NB_USER=jovyan
+
+COPY --chown=$NB_UID:$NB_GID pynb /home/$NB_USER/work
