@@ -1,9 +1,0 @@
-name: sysflow-environment
-channels:
-  - conda-forge
-dependencies:
-  - python
-  - numpy
-  - pip
-  - pip:
-    - sysflow-tools>=0.5.1rc1
