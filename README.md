@@ -1,1 +1,1 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sysflow-telemetry/sf-lab/HEAD)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sysflow-telemetry/sf-lab/blob/main/pynb/AvengerCon22.ipynb)
