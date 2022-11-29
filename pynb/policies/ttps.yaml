@@ -620,13 +620,11 @@
   priority: low
   tags: [mitre:T1106, mitre:T1574]
 
-- rule: Suspicious process spawned2
+- rule: Suspicious process spawned from untrusted dir
   desc: Suspicious behavior observed in application spawning another process
   condition: sf.opflags = EXEC 
              and sf.proc.exe != sf.pproc.exe 
-             #and not allowed_launchers 
-             and sf.proc.exe contains "/tmp/redpill/tweet"
-             #and not entrypoint
+             and sf.proc.exe startswith "/tmp/"
   action: [tag]
   priority: low
   tags: [mitre:T1106, mitre:T1574]
