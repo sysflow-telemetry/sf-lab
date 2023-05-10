@@ -8,6 +8,7 @@ This repository contains educational SysFlow notebooks.
 | pynb/AI4Sec2021 | Notebook for the [AI/ML for Cyber Security 2021 workshop](https://www.hacktheuniverse.tech/provenance-tracking-with-attack-graphs-using-sysflow/) demo | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sysflow-telemetry/sf-lab/blob/main/pynb/AI4Sec2021.ipynb) |
 | pynb/BHEurope21-Demo | Notebook for the [BlackHat Europe'21 Arsenal](https://www.blackhat.com/eu-21/arsenal/schedule/index.html#an-open-stack-for-threat-hunting-in-hybrid-cloud-with-connected-observability-25112) demo | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sysflow-telemetry/sf-lab/blob/main/pynb/BHEurope21-Demo.ipynb) |
 | pynb/AvengerCon22 | Notebook for the [AvengerCon'22 workshop](https://www.hacktheuniverse.tech/provenance-tracking-with-attack-graphs-using-sysflow/) tutorial | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sysflow-telemetry/sf-lab/blob/main/pynb/AvengerCon22.ipynb) |
+| pynb/LFOSSNA23 | Notebook for the [Linux Foundation Open Source Summit North America'23](https://sched.co/1K5IT) tutorial | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sysflow-telemetry/sf-lab/blob/main/pynb/LFOSSNA23.ipynb) |
 
 # What is SysFlow?
 
