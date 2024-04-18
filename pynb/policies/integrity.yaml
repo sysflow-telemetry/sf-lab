@@ -1,0 +1,44 @@
+###### Lists ####################
+
+- list: low_integrity_object_identifiers
+  items: [httpd_sys_rw_content]
+
+- list: potential_victim_identifiers
+  items: [crond_exec_t]
+
+- list: potential_network_attack_vector_identifiers
+  items: [httpd_exec_t]
+
+###### Macros ###################
+
+- macro: low_integrity_object
+  condition: (sf.file.selabel pmatch (low_integrity_object_identifiers))
+
+- macro: potential_victim
+  condition: (sf.proc.selabel pmatch (potential_victim_identifiers))
+
+- macro: potential_network_attack_vector
+  condition: (sf.proc.selabel pmatch (potential_network_attack_vector_identifiers))
+
+###### Rules ####################
+
+- rule: Low Integrity Object
+  desc: Labels an object as low integrity based on its security identifier
+  condition: low_integrity_object    
+  action: [tag]
+  priority: low
+  tags: [integrity:low]
+  
+- rule: High Integrity Object
+  desc: Labels an object as high integrity based on its security identifier
+  condition: potential_victim
+  action: [tag]
+  priority: low
+  tags: [integrity:high]
+  
+- rule: Potential Network Attack Vector
+  desc: Labels an object as high integrity based on its security identifier
+  condition: potential_network_attack_vector
+  action: [tag]
+  priority: low
+  tags: [vector:network]
